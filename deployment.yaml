@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-   name: test_deployment1
+   name: mydeployment
    labels:
-       app: myapp1
+       app: myapp
        type: front-end
 spec:
   replicas: 3
@@ -13,9 +13,9 @@ spec:
        
   template: 
      metadata:
-         name: test_pod1
+         name: mypod
          labels:
-            app: myapp1
+            app: myapp
             type: front-end
          
      spec: 
